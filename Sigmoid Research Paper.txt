@@ -1,0 +1,50 @@
+Abstract
+
+It is the science and engineering of making intelligent machines. Relating making machines "Understand" Human data and be able to give an output of some sort, though it does not observe the world the way human do. The definition of AI varies based on own understanding and textbook definitions. AI is broadly characterized as the study of computations that allow for perception, reason and action. It is created using complex mathematical functions, such as the sigmoid function, these including categories such as linear algebra, statistics and applied mathematics. This paper will go into detail about how the sigmoid function allows a program to make a decision or prediction with given data [ inputs ] and given outputs as its training data, using neural layers (Networks). 
+
+KEYWORDS - Sigmoid function, Neuron layers
+
+
+Introduction  
+
+Artificial Intelligence (AI ) is a branch of computer science which deals with intelligence of machines where an intelligent agent is a system that takes action which maximize its chances of success. It is a study of ideas which enable computers to do the things that make people seem intelligent. the core ideas of AI include such as reasoning, knowledge, planning, learning, communication, perception and the ability to move and manipulate objects. It is the science and engineering of making intelligent machine, especially intelligent computer programs
+
+Mathematical functions use to make artificial agents
+
+Sigmoid function
+
+Definition
+
+The sigmoid function is a mathematical function that maps any input value to a value between 0 and 1, this property make it useful for binary classification and logistic regression problems. The shape of the sigmoid function resembles an "S" shape, starting with a slow increase, rapidly approaching 1 and the level off
+
+In regards to neural networks, the sigmoid functions is used as an activation function in the neurons, each neuron sigmoid function to its output. It introduces non-linearity into the model, allowing the neural network to learn more complex decision boundaries. The function is particularly useful in feedforward neural networks, which are used in different applications including image recognition, natural language processing and speech recognition.
+
+The sigmoid function commonly appears in logistic regression problems, where the goal
+is to predict a binary outcome given a set of independent variables. The output of the sigmoid function, a value between 0 an 1, represents the probability of the sample belonging to the positive class
+
+Mathematically defined as : 1/(1+e^-x)
+As the value of the input increases the output value of it starts with a slow increase, then rapidly approaches 1 and finally levels off, such that's x values are between [-infinity, infinity] and y values [ 0, 1] being the domain
+
+The derivative used to train neural networks, mathematically defined by f(x)(1-f(x)
+where f(x) is the output of the function. This useful to adjust the weights and biases of the neurons more efficiently.
+
+The derivative of a function tells us how much the function changes in response to a change in its input, during propagation it is crucial to allowing neutral networks to learn from mistakes and improve over time, by calculating the error gradient of the network. The error gradient is a measure of how much the network's output differs from the desired output.
+
+The error gradient updates the network's weights to bring the network's output closer to the desired output in the future
+
+Limitations
+
+
+The output of the sigmoid function always has the output of 1 and 0which causes problems when neural networks' output should greater than 1 and less than 0
+
+Conclusion 
+
+In conclusion our application will make use of the sigmoid function and its derivative to allow, our neural network to be able to learn from its mistakes for every epoch, the longer it trains the more likely to get answer correctly. This given any input and possible answer I can be able to decipher the how the answers came to be and be able to make a prediction of future outcomes without any further "answers"/targets.
+
+References 
+[Prof. Necha Saini 2023 Assistant Professor in Department of Computer Science & IT
+SDAM College Dinanagar | RESEARCH PAPER ON ARTIFICIAL INTELLIGENCE & 
+ITS APPLICATIONS
+]
+[Swapni Vishwakarma | How to Understand Sigmoid Function in
+Artificial Neural Networks?| 09 December 2024 ]
