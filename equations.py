@@ -57,9 +57,10 @@ def derivative_leaky_relu(x,alpha=0.01):
     return 1.0 if x > 0 else alpha
 
 def softmax(zs):
-    exps =[math.exp(z) for z in zs]
+    max_z = max(zs)
+    exps = [math.exp(z - max_z) for z in zs]  # prevent overflow
     total = sum(exps)
-    return [e/total for e in exps]
+    return [e / total for e in exps]
 
 
     
