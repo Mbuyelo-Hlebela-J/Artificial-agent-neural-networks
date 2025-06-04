@@ -12,7 +12,7 @@ class NeuralNetwork:
         self.output_weights = [[0.1 for _ in range(hidden_size)] for _ in range(output_size)]
         self.output_biases = [0.0 for _ in range(output_size)]
 
-        self.learning_rate = 0.5
+        self.learning_rate = 0.1
         #Activation function selection
         self.hidden_activation_name = hidden_activation
         self.output_activation_name = output_activation
@@ -59,6 +59,8 @@ class NeuralNetwork:
         bias_gradients_output = [0.0 for _ in self.output_biases]
 
         batch_size = len(batch_inputs)
+        total_loss = 0
+
 
         for inputs, targets in zip(batch_inputs, batch_targets):
             self.forward(inputs)
