@@ -4,7 +4,7 @@ import equations as eqn
 import json
 class NeuralNetwork:
     def __init__(self, input_size, hidden_size, output_size, hidden_activation="relu",output_activation="sigmoid"):
-        # Initialize weights with small random values
+        # weights
         self.hidden_weights = [[random.uniform(-1,1)for _ in range(input_size)] for _ in range(hidden_size)]
         
         self.hidden_biases = [random.uniform(-1,1)for _ in range(hidden_size)] 
